@@ -1,6 +1,6 @@
-baseURL: "http://reside-ic.github.io/wodin-news/"
+baseURL: "http://reside-ic.github.io/naomi-news/"
 languageCode: "en-gb"
-title: "Wodin News"
+title: "Naomi News"
 theme: "PaperMod"
 enableEmoji: true
 
@@ -8,6 +8,7 @@ params:
   # https://github.com/adityatelange/hugo-PaperMod/wiki/Installation#sample-configyml
   DateFormat: "1 January 2006"
   disableThemeToggle: true
+  defaultTheme: light
   disableSpecial1stPost: true
   hideMeta: false
 

@@ -1,6 +1,6 @@
-# wodin-news
+# naomi-news
 
-This is the source for our wodin changelog, it will be deployed to https://reside-ic.github.io/wodin-news
+This is the source for our naomi changelog, it will be deployed to https://reside-ic.github.io/naomi-news
 
 ## Install hugo
 
@@ -9,7 +9,7 @@ This needs a recentish version of hugo (at least 0.83), which might not get on w
 ## Download source
 
 ```
-git clone --recursive git@github.com:reside-ic/wodin-news
+git clone --recursive git@github.com:reside-ic/naomi-news
 ```
 
 ## Create a new post
@@ -39,7 +39,7 @@ summary: "A string here" # set this to force the summary content
 hugo serve
 ```
 
-Visit http://localhost:1313/wodin-news/ to see changes, editing the file will reflect immediately
+Visit http://localhost:1313/naomi-news/ to see changes, editing the file will reflect immediately
 
 ## Docs
 

@@ -2,12 +2,26 @@
 title: "About"
 ---
 
-Wodin is [odin](https://mrc-ide.github.io/odin) on the web, an application that compiles the odin domain specific language for differential equations into JavaScript and allows exploration of dynamical systems without installing any software at all. It has been built by us at [RESIDE](https://reside-ic.github.io) to support teaching activities within the [MRC Centre for Global Infectious Disease Analysis](https://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/)
+<!-- This is duplicated from https://reside-ic.github.io/projects/naomi/ - see
+https://github.com/reside-ic/reside-ic.github.io/blob/source/content/projects/naomi.md -->
 
-It is composed of many moving parts
+[https://naomi.unaids.org](https://naomi.unaids.org/)
 
-* [`wodin`](https://github.com/mrc-ide/wodin), an [express](https://expressjs.com/)-based API and [TypeScript](typescriptlang.org)/[Vue.js](https://vuejs.org/) based web application
-* [`odin.api`](https://github.com/mrc-ide/odin.api), a [porcelain](https://reside-ic.github.io/porcelain/)/[plumber](https://www.rplumber.io/) API which interfaces between `wodin` and `odin`
-* [`odin`](https://mrc-ide.github.io/odin), a domain specific language (DSL) for expressing systems differential equations
-* [`odin-js`](https://mrc-ide.github.io/odin-js/), JavaScript support code for running odin models in JavaScript
-* [`dopri-js`](https://mrc-ide.github.io/dopri-js/), a differential equation solver written in TypeScript
+A web interface for a model estimating various HIV epidemic indicators at a regional level. The application is used by teams of health officials from sub-Saharan African countries to inform HIV programme targets. The tool was rolled out during a series of UNAIDS-led workshops in Johannesburg and Abidjan from December 2019 - January 2020. The model produces district-level estimates of people living with HIV, coverage of and unmet need for antiretroviral treatment, and new HIV infections. Estimates are used to develop official HIV programme targets and budget allocations for the US Government PEPFAR programme planning, Global Fund grant applications, and other national HIV programme planning needs.
+
+The app is comprised of:
+
+* [HIV model](https://github.com/mrc-ide/naomi)
+* [wrapped by an R API](https://github.com/mrc-ide/hintr)
+* [a Kotlin web server](https://github.com/mrc-ide/hint)
+* [a Vue.js front-end](https://github.com/mrc-ide/hint/tree/master/src/app/static)
+* Supported by
+   * [a Postgres database for the Kotlin web server](https://github.com/mrc-ide/hint-db)
+   * [R i18n infrastructure](https://github.com/reside-ic/traduire)
+   * [load balancing long-running jobs via a Redis queue](https://github.com/mrc-ide/rrq)
+   * [deployment tool](https://github.com/mrc-ide/hint-deploy)
+   * [built using constellation](https://github.com/reside-ic/constellation)
+
+This is the first example in our experiments for wrapping research code and deploying it to the web using modern testable technologies.
+
+Presented as a <a href="/resources/RSLondonSE-hint-poster.pdf" target="_blank">poster</a> at [RSLondonSouthEast](https://rslondon.ac.uk/) on 6th February.
