@@ -33,6 +33,15 @@ summary: "A string here" # set this to force the summary content
 ---
 ```
 
+## Writing posts
+
+Please include a tag in your post header using `tags: ["Feature"]`. Please use one of the following tags:
+* Feature - a new feature in the UI
+* Update - a smaller update to something in the UI, or a less user facing update change, or a change to logic
+* Model - a change to how the model works which we want to tell users about
+
+Include a version in the header either `hint_version`, `hintr_version` or a `naomi_version`.
+
 ## Develop
 
 ```
