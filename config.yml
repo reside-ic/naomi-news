@@ -6,11 +6,15 @@ enableEmoji: true
 
 params:
   # https://github.com/adityatelange/hugo-PaperMod/wiki/Installation#sample-configyml
-  DateFormat: "1 January 2006"
+  DateFormat: "1 Jan 2006"
   disableThemeToggle: true
   defaultTheme: light
   disableSpecial1stPost: true
   hideMeta: false
+  ShowPostNavLinks: true
+  homeInfoParams:
+    Title: Naomi news site
+    Content: What's new and updated in the Naomi UI and model
 
 menu:
   main:
