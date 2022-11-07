@@ -22,7 +22,3 @@ menu:
       name: Tags
       url: /tags/
       weight: 20
-    - identifier: epimodels
-      name: EpiModels
-      url: https://epimodels.dide.ic.ac.uk
-      weight: 30
