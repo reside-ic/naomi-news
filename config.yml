@@ -13,7 +13,7 @@ params:
   hideMeta: false
   ShowPostNavLinks: true
   homeInfoParams:
-    Title: Naomi news site
+    Title: Naomi News Site
     Content: What's new and updated in the Naomi UI and model
 
 menu:
