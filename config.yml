@@ -1,4 +1,4 @@
-baseURL: "http://reside-ic.github.io/naomi-news/"
+baseURL: "https://reside-ic.github.io/naomi-news/"
 languageCode: "en-gb"
 title: "Naomi News"
 theme: "PaperMod"
