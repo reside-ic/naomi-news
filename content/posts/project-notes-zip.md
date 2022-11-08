@@ -1,7 +1,7 @@
 ---
 title: "Project notes added to output zip"
 date: 2022-06-20
-hint_version: 2.2.0
+version: ["hint 2.2.0"]
 pull_request: https://github.com/mrc-ide/hint/pull/710
 tags: ["Feature"]
 ---

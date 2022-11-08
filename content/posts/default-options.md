@@ -1,7 +1,7 @@
 ---
 title: "All model fit and calibration options will now be set by default"
 date: 2022-09-26
-hintr_version: 1.0.41
+version: ["hintr v1.0.41"]
 pull_request: https://github.com/mrc-ide/hintr/pull/405
 tags: ["Update"]
 ---
