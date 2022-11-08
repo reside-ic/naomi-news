@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+set -eux
+
+USER=vagrant
+HOST=naomi-dev.dide.ic.ac.uk
+DIR=/
+OUTPUT_DIR=news
+
+hugo -b https://naomi-dev.dide.ic.ac.uk/news -d ${OUTPUT_DIR}
+
+function cleanup {
+    rm -rf $OUTPUT_DIR
+}
+trap cleanup EXIT
+
+tar c ${OUTPUT_DIR} | ssh ${USER}@${HOST} docker cp - hint_proxy:${DIR}
+
+exit 0
