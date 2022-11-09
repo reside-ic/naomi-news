@@ -2,18 +2,38 @@
 
 set -eux
 
-USER=vagrant
-HOST=naomi-dev.dide.ic.ac.uk
-DIR=/
+DEST_DIR=/
 OUTPUT_DIR=news
 
-hugo -b https://naomi-dev.dide.ic.ac.uk/news -d ${OUTPUT_DIR}
+mkdir $OUTPUT_DIR
 
 function cleanup {
     rm -rf $OUTPUT_DIR
 }
 trap cleanup EXIT
 
-tar c ${OUTPUT_DIR} | ssh ${USER}@${HOST} docker cp - hint_proxy:${DIR}
+function release_site {
+    hugo -b $1 -d ${OUTPUT_DIR}
+    tar c ${OUTPUT_DIR} | ssh $2@$3 docker cp - hint_proxy:${DEST_DIR}
+}
+
+## Sites are a string of format
+## URL USER HOST
+## URL is the full URL of the news site
+## USER is the user to ssh as
+## HOST the the address to ssh to
+declare -A SITES=(
+    ["dev"]="https://naomi-dev.dide.ic.ac.uk/news vagrant naomi-dev.dide.ic.ac.uk"
+    ["staging"]="https://naomi-staging.dide.ic.ac.uk/news vagrant naomi-staging.dide.ic.ac.uk"
+    ["preview"]="https://naomi-preview.dide.ic.ac.uk/news vagrant naomi-preview.dide.ic.ac.uk"
+    ["production"]="https://naomi.unaids.org/news vagrant naomi.dide.ic.ac.uk"
+)
+
+for site in "${!SITES[@]}"; do
+    echo "Deploying to $site"
+    release_site ${SITES[$site]}
+done
+
+echo "Deployment completed"
 
 exit 0
