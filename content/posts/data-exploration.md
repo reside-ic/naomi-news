@@ -1,7 +1,7 @@
 ---
 title: "Data exploration: a standalone input data viewer"
 date: 2021-11-24
-hint_version: 1.76.0
+version: ["hint v1.76.0"]
 pull_request: https://github.com/mrc-ide/hint/pull/624
 tags: ["Feature"]
 ---

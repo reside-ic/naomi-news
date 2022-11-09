@@ -1,7 +1,7 @@
 ---
 title: "Model output zip can now be loaded to view outputs"
 date: 2022-07-18
-hint_version: 2.4.0
+version: ["hint v2.4.0"]
 pull_request: https://github.com/mrc-ide/hint/pull/716
 tags: ["Feature"]
 ---

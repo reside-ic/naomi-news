@@ -1,7 +1,7 @@
 ---
 title: "New output plot: Comparison barchart"
 date: 2022-08-31
-hint_version: 2.9.0
+version: ["hint v2.9.0"]
 pull_request: https://github.com/mrc-ide/hint/pull/728
 tags: ["Feature"]
 ---
