@@ -3,4 +3,4 @@
 	url = https://github.com/adityatelange/hugo-PaperMod.git
 [submodule "themes/papermod-changelog"]
 	path = themes/papermod-changelog
-	url = git@github.com:reside-ic/papermod-changelog.git
+	url = https://github.com/reside-ic/papermod-changelog.git
