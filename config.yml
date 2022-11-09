@@ -1,7 +1,7 @@
 baseURL: "https://naomi.unaids.org/news"
 languageCode: "en-gb"
 title: "Naomi News"
-theme: "PaperMod"
+theme: ["papermod-changelog", "PaperMod"]
 enableEmoji: true
 
 params:
