@@ -15,6 +15,13 @@ params:
   homeInfoParams:
     Title: Naomi News Site
     Content: What's new and updated in the Naomi UI and model
+  tags:
+    - text: Update
+      colour: "#FFBA11"
+    - text: Feature
+      colour: "#14CC80"
+    - text: Model
+      colour: "#E31837"
 
 menu:
   main:

@@ -14,27 +14,12 @@
     font-size: 14px;
     font-weight: 600;
     line-height: 34px;
-    background: var(--code-bg);
+    background: var(--theme);
 }
 
 .post-tags a:active {
     transition: transform 0.1s;
     transform: scale(0.98);
-}
-
-.post-tags a.Feature {
-    background-color: var(--theme);
-    color: #14CC80;
-}
-
-.post-tags a.Update {
-    background-color: var(--theme);
-    color: #FFBA11;
-}
-
-.post-tags a.Model {
-    background-color: var(--theme);
-    color: #E31837;
 }
 
 .post-tags:hover {
