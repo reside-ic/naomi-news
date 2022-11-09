@@ -7,6 +7,6 @@ tags: ["Feature"]
 ---
 
 We've added a new standalone data exploration mode. You can access this at https://naomi.unaids.org/explore
-![png of data exploration](/naomi-news/img/data-exploration.png)
+![png of data exploration](/news/img/data-exploration.png)
 
 You can use this new mode to view your input data early in the estimates process within a simplified UI. The data exploration has less strict data validation than the Naomi model fit and so can be used to diagnose data issues before model fitting. The new mode is available to users without a Naomi account via the "Continue as guest" button on the landing page. The data exploration mode replaces the use of ShinyRob from previous estimates cycles.

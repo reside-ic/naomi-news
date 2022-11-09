@@ -7,6 +7,6 @@ tags: ["Feature"]
 ---
 
 Project and version notes are now included in the model output zip.
-![png of editing project notes](/naomi-news/img/notes-edit.png)
+![png of editing project notes](/news/img/notes-edit.png)
 Now, when you write notes on the project page these will added to the output zip in a file "notes.txt". The notes file contains the name, last modified time and content of the the project and every version.
-![png of project notes file](/naomi-news/img/notes-file.png)
+![png of project notes file](/news/img/notes-file.png)
