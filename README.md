@@ -26,7 +26,7 @@ The front matter options that might be useful:
 ---
 title: "Add a title here"
 date: 2022-10-20T13:51:48+01:00
-tags: ["release"]
+tags: ["Feature"]
 
 hideSummary: false # set this to true to prevent the summary
 summary: "A string here" # set this to force the summary content
