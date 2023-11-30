@@ -15,7 +15,7 @@ git clone --recursive git@github.com:reside-ic/naomi-news
 ## Create a new post
 
 ```
-hugo new posts/<title>
+hugo new posts/<title>.md
 ```
 
 This will create a .md file in `content/posts` which you should edit.
