@@ -3,7 +3,7 @@
 	"file": "style.css",
 	"sourceRoot": "/home/runner/work/naomi-news/naomi-news",
 	"sources": [
-		"themes/papermod-changelog/assets/sass/template.scss"
+		"stdin"
 	],
 	"sourcesContent": [
 		"\n  .post-tags a.Update {\n    color: #FFBA11\n  }\n\n  .terms-tags a.Update {\n    color: #FFBA11\n  }\n\n  .post-tags a.Feature {\n    color: #14CC80\n  }\n\n  .terms-tags a.Feature {\n    color: #14CC80\n  }\n\n  .post-tags a.Model {\n    color: #E31837\n  }\n\n  .terms-tags a.Model {\n    color: #E31837\n  }\n\n"
