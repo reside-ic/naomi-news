@@ -1,6 +1,6 @@
 ---
 title: "New Table Tab in the Model Outputs page"
-date: 2023-11-30T15:47:28Z
+date: 2023-12-01T09:47:28Z
 version: ["hint v3.5.0"]
 pull_request: https://github.com/mrc-ide/hint/pull/900
 tags: ["Feature"]
